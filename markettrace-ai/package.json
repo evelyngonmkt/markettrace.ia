@@ -1,0 +1,29 @@
+{
+  "name": "markettrace-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fundação independente da MarketTrace AI.",
+  "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @markettrace/web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm --filter @markettrace/shared build && pnpm -r typecheck",
+    "test": "pnpm --filter @markettrace/shared build && pnpm -r test",
+    "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives",
+    "format:check": "prettier --check .",
+    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm format:check && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}

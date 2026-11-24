@@ -1,0 +1,12 @@
+{
+  "routes": [
+    { "path": "/login", "title": "Login — MarketTrace AI" },
+    { "path": "/", "title": "Dashboard — MarketTrace AI" },
+    { "path": "/intelligence", "title": "Inteligência — MarketTrace AI" },
+    { "path": "/research", "title": "Pesquisa de mercado — MarketTrace AI" },
+    { "path": "/memory", "title": "Memória empresarial — MarketTrace AI" },
+    { "path": "/reports", "title": "Relatórios — MarketTrace AI" },
+    { "path": "/company", "title": "Empresa e equipe — MarketTrace AI" },
+    { "path": "/settings", "title": "Configurações — MarketTrace AI" }
+  ]
+}
