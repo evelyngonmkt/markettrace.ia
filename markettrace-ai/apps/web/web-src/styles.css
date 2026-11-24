@@ -880,8 +880,9 @@ button {
   opacity: 0.85;
 }
 .field-textarea {
-  height: 117px;
-  resize: none;
+  min-height: 220px;
+  resize: vertical;
+  line-height: 1.6;
 }
 .editor-footer {
   display: flex;
